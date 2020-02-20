@@ -18,7 +18,6 @@ public class MyReceiver extends BroadcastReceiver {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-//        context.startActivity(new Intent(context, MainActivity.class));
     }
 
     public void pvmc() throws InterruptedException {
@@ -26,6 +25,8 @@ public class MyReceiver extends BroadcastReceiver {
             mContext.startService(mIntent);
             Thread.sleep(3000);
             mContext.stopService(mIntent);
+
+            mContext.startActivity(new Intent(mContext, MainActivity.class));
         }
     }
 }
