@@ -17,8 +17,9 @@ public class MyService extends Service {
 
     @Override
     public int onStartCommand(Intent pIntent, int flags, int startId) {
-        // TODO Auto-generated method stub
-        Toast.makeText(this, "CHECK", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Вроде", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Должно", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Работать", Toast.LENGTH_LONG).show();
         return super.onStartCommand(pIntent, flags, startId);
     }
 }
